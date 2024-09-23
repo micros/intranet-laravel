@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Laravel</title>
 
     <!-- Fonts -->
@@ -18,15 +17,65 @@
 <body class="font-sans antialiased bg-gray-100" x-data="{ isMenuOpen: true }">
     <div class="md:flex md:flex-col md:min-h-screen">
         <!-- Header -->
-        <header class="flex items-center p-3 text-white bg-gray-800 md:flex-none">
-            <button @click="isMenuOpen = !isMenuOpen" class="p-2 mr-3 bg-gray-700 hover:bg-gray-600 focus:outline-none">
-                <!-- Ícono del menú (tres líneas) -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-            <h1 class="text-xl font-semibold">Mi Aplicación</h1>
+        <header class="flex items-center justify-between p-3 text-white bg-gray-800 md:flex-none">
+            <!-- Sección izquierda -->
+            <div class="flex items-center">
+                <button @click="isMenuOpen = !isMenuOpen"
+                    class="p-2 mr-3 bg-gray-700 hover:bg-gray-600 focus:outline-none">
+                    <!-- Ícono del menú (tres líneas) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <h1 class="text-xl font-semibold">Mi Aplicación</h1>
+            </div>
+            <!-- Menú de utilidades -->
+            <div class="flex items-center space-x-4">
+                <!-- Menú desplegable de Administración -->
+                <div class="relative" x-data="{ adminOpen: false }">
+                    <button @click="adminOpen = !adminOpen"
+                        class="flex items-center px-3 py-2 text-white bg-gray-700 hover:bg-gray-600 focus:outline-none">
+                        Administración
+                        <!-- Ícono de flecha abajo -->
+                        <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <!-- Submenú -->
+                    <div x-show="adminOpen" @click.away="adminOpen = false"
+                        class="absolute right-0 z-50 w-48 mt-2 bg-white rounded shadow-lg"
+                        x-transition.origin.top.right>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Gestión de
+                            Usuarios</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Configuraciones</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Reportes</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Logs del Sistema</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Backups</a>
+                    </div>
+                </div>
+                <!-- Menú desplegable de Mi Perfil -->
+                <div class="relative" x-data="{ profileOpen: false }">
+                    <button @click="profileOpen = !profileOpen"
+                        class="flex items-center px-3 py-2 text-white bg-gray-700 hover:bg-gray-600 focus:outline-none">
+                        Mi Perfil
+                        <!-- Ícono de flecha abajo -->
+                        <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <!-- Submenú -->
+                    <div x-show="profileOpen" @click.away="profileOpen = false"
+                        class="absolute right-0 z-50 w-48 mt-2 bg-white rounded shadow-lg"
+                        x-transition.origin.top.right>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Ver Perfil</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Cerrar Sesión</a>
+                    </div>
+                </div>
+            </div>
         </header>
 
         <!-- Contenedor principal -->
