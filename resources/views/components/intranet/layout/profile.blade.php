@@ -1,6 +1,6 @@
 <div class="relative" x-data="{ profileOpen: false }">
     <button @click="profileOpen = !profileOpen"
-        class="flex items-center px-3 py-2 text-white bg-gray-700 hover:bg-gray-600 focus:outline-none">
+        class="flex items-center px-3 py-3 text-white bg-gray-700 hover:bg-gray-600 focus:outline-none">
         <i class="fas fa-user"></i>
     </button>
     <div x-show="profileOpen" @click.away="profileOpen = false"
