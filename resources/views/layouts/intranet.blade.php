@@ -85,12 +85,12 @@
             <main class="flex-1">
                 <div class="h-full lg:flex">
                     <!-- Contenido principal -->
-                    <div class="h-full p-2 lg:flex-1">
+                    <div class="h-full p-4 lg:flex-1">
                         <h2 class="mb-3 text-lg font-semibold">Contenido Principal</h2>
                         <p>Aquí va el contenido de la página...</p>
                     </div>
                     <!-- Barra lateral de destacados -->
-                    <div class="hidden h-full p-2 lg:block lg:w-64 bg-slate-200">
+                    <div class="hidden h-full p-4 lg:block lg:w-64 bg-slate-200">
                         <h2 class="mb-3 text-lg font-semibold">Destacados</h2>
                         <ul>
                             <li>Destacado 1</li>
