@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laravel</title>
+    <title>{{ $name }}</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -21,7 +21,7 @@
         <div class="flex flex-col md:flex-row md:flex-1">
             <!-- Contenedor principal -->
             <x-intranet.layout.menu />
-            <x-intranet.layout.main />
+            {{ $slot }}
         </div>
 
         <!-- Footer -->
