@@ -14,7 +14,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="font-sans antialiased bg-gray-100" x-data="{ isMenuOpen: true }">
+<body class="font-sans antialiased bg-gray-100" x-data="{ isMenuOpen: true, adminOpen: false, profileOpen: false }">
     <div class="md:flex md:flex-col md:min-h-screen">
         <!-- Header -->
         <header class="flex items-center justify-between p-3 text-white bg-gray-800 md:flex-none">
@@ -33,16 +33,11 @@
             </div>
             <!-- Menú de utilidades -->
             <div class="flex items-center space-x-4">
-                <!-- Menú desplegable de Administración -->
+                <!-- Menú desplegable de Administración (ícono) -->
                 <div class="relative" x-data="{ adminOpen: false }">
                     <button @click="adminOpen = !adminOpen"
                         class="flex items-center px-3 py-2 text-white bg-gray-700 hover:bg-gray-600 focus:outline-none">
-                        Administración
-                        <!-- Ícono de flecha abajo -->
-                        <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
+                        <i class="fas fa-cogs"></i>
                     </button>
                     <!-- Submenú -->
                     <div x-show="adminOpen" @click.away="adminOpen = false"
@@ -56,16 +51,11 @@
                         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Backups</a>
                     </div>
                 </div>
-                <!-- Menú desplegable de Mi Perfil -->
+                <!-- Menú desplegable de Mi Perfil (ícono) -->
                 <div class="relative" x-data="{ profileOpen: false }">
                     <button @click="profileOpen = !profileOpen"
                         class="flex items-center px-3 py-2 text-white bg-gray-700 hover:bg-gray-600 focus:outline-none">
-                        Mi Perfil
-                        <!-- Ícono de flecha abajo -->
-                        <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
+                        <i class="fas fa-user"></i>
                     </button>
                     <!-- Submenú -->
                     <div x-show="profileOpen" @click.away="profileOpen = false"
@@ -81,7 +71,7 @@
         <!-- Contenedor principal -->
         <div class="flex flex-col md:flex-row md:flex-1">
             <!-- Navegación lateral -->
-            <nav x-show="isMenuOpen" class="inset-0 z-50 text-white bg-gray-700 md:relative md:w-64 md:h-auto"
+            <nav x-show="isMenuOpen" class="inset-0 z-40 text-white bg-gray-700 md:relative md:w-64 md:h-auto"
                 x-transition.opacity>
                 <ul>
                     <li><a href="#" class="block px-4 py-2 hover:bg-gray-600">Inicio</a></li>
