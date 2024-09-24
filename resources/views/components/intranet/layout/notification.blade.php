@@ -4,6 +4,8 @@
         <i class="fas fa-bell"></i>
 
         <!-- Punto rojo si hay notificaciones -->
+        <span x-show="hasNotifications"
+            class="absolute block w-3 h-3 bg-red-600 rounded-full animate-ping -top-1 -right-1"></span>
         <span x-show="hasNotifications" class="absolute block w-3 h-3 bg-red-600 rounded-full -top-1 -right-1"></span>
     </button>
 
