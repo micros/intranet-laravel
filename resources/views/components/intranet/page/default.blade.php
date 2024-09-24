@@ -1,25 +1,24 @@
 <x-intranet.layout.main>
+    {{-- Layout necesita name --}}
     <x-slot name="name">
         {{ $name }}
     </x-slot>
-    <x-slot name="sidebar">
-        {{ $sidebar }}
-    </x-slot>
+    {{-- Main necesita sidebar --}}
+    @if (isset($sidebar) && !$sidebar->isEmpty())
+        <x-slot name="sidebar">
+            {{ $sidebar }}
+        </x-slot>
+    @endif
+    {{-- Main necesita content --}}
     <x-slot name="content">
         <div class="h-full p-6 font-serif text-gray-800 bg-white lg:flex-1 lg:px-14">
-            {{ $slot }}
-            <!-- Migas de pan -->
-            <nav class="mb-4 font-sans text-sm text-gray-600">
-                <a href="#" class="hover:underline">Inicio</a> /
-                <a href="#" class="hover:underline">Blog</a> /
-                <span>Artículo Minimalista</span>
-            </nav>
-
+            <x-intranet.layout.breadcrumbs />
             <!-- Título prominente -->
             <h1 class="mb-2 text-4xl font-bold text-gray-900">{{ $name ?? 'This page has no title' }}</h1>
 
             <!-- Subtítulo -->
-            <h2 class="mb-4 font-sans text-2xl font-medium text-gray-700">{{ $subtitle ?? 'This page has no subtitle' }}
+            <h2 class="mb-4 font-sans text-2xl font-medium text-gray-700">
+                {{ $subtitle ?? 'This page has no subtitle' }}
             </h2>
 
             <!-- Resumen -->

@@ -1,4 +1,4 @@
-<x-intranet.layout.content>
+<x-intranet.page.default>
     <x-slot name="name">
         Cómo Lograr un Diseño Minimalista
     </x-slot>
@@ -22,7 +22,7 @@
         </p>
     </x-slot>
     <x-slot name="author">
-        Autor: Juan Pérez
+        Juan Pérez
     </x-slot>
     <x-slot name="date">
         Última actualización: 22 de Septiembre de 2024
@@ -34,4 +34,4 @@
             <li>Destacado 3</li>
         </ul>
     </x-slot>
-</x-intranet.layout.content>
+</x-intranet.page.default>

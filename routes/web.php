@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'index');
+Route::view('/', 'home')->name('home');
+
+Route::view('/{slug}', 'default')->name('default');
 
 Route::prefix('admin')->group(function () {
 

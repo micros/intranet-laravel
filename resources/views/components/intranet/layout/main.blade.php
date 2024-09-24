@@ -9,9 +9,11 @@
             <!-- Contenido principal -->
             {{ $content }}
             <!-- Barra lateral de destacados -->
-            <x-intranet.layout.sidebar>
-                {{ $sidebar }}
-            </x-intranet.layout.sidebar>
+            @if (isset($sidebar) && !$sidebar->isEmpty())
+                <x-intranet.layout.sidebar>
+                    {{ $sidebar }}
+                </x-intranet.layout.sidebar>
+            @endif
         </div>
     </main>
 </x-intranet-layout>
