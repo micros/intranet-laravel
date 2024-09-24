@@ -1,7 +1,12 @@
 <?php
 
+use App\Livewire\Actions\Logout;
 use Illuminate\Support\Facades\Route;
 
+Route::post('/logout', function () {
+    (new Logout())->__invoke();
+    return redirect('/');
+})->name('logout');
 
 Route::prefix('admin')->group(function () {
 
@@ -15,7 +20,6 @@ Route::prefix('admin')->group(function () {
 
     require __DIR__ . '/auth.php';
 });
-
 
 Route::view('/', 'home')
     ->middleware(['auth'])

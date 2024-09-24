@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Intranet;
 
+use App\Livewire\Actions\Logout;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
@@ -9,16 +10,10 @@ class LogoutButton extends Component
 {
     public function logout()
     {
-        // Logout the user
-        Auth::logout();
+        // Llama al action Logout
+        (new Logout())->__invoke();
 
-        // Invalidate the session to prevent reuse
-        request()->session()->invalidate();
-
-        // Regenerate session token to prevent CSRF attacks
-        request()->session()->regenerateToken();
-
-        // Redirect to the home page ('/')
+        // Redirige al usuario a la página de inicio
         return redirect('/');
     }
 
