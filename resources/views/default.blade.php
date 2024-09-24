@@ -1,15 +1,15 @@
 <x-intranet.page.default>
-    <x-slot name="name">
+    <x-slot:name>
         Cómo Lograr un Diseño Minimalista
     </x-slot>
-    <x-slot name="subtitle">
+    <x-slot:subtitle>
         Descubre las claves para un diseño simple y efectivo
     </x-slot>
-    <x-slot name="summary">
+    <x-slot:summary>
         En este artículo aprenderás a aplicar principios minimalistas en tu diseño, optimizando la experiencia del
         usuario y creando interfaces limpias y funcionales.
     </x-slot>
-    <x-slot name="description">
+    <x-slot:description>
         <p>
             El minimalismo no es solo una tendencia visual, sino una estrategia que busca reducir los elementos
             innecesarios en una composición para mejorar la claridad. En el mundo del diseño web, esto se traduce en
@@ -21,13 +21,13 @@
             resultado es un diseño que permite al usuario concentrarse en lo esencial sin distracciones.
         </p>
     </x-slot>
-    <x-slot name="author">
+    <x-slot:author>
         Juan Pérez
     </x-slot>
-    <x-slot name="date">
+    <x-slot:date>
         Última actualización: 22 de Septiembre de 2024
     </x-slot>
-    <x-slot name="sidebar">
+    <x-slot:sidebar>
         <ul>
             <li>Destacado 1</li>
             <li>Destacado 2</li>

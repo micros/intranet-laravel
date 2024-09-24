@@ -1,5 +1,5 @@
 <x-intranet-layout>
-    <x-slot name="name">
+    <x-slot:name>
         {{ $name }}
     </x-slot>
 
