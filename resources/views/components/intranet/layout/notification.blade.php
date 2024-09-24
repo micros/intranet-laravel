@@ -1,6 +1,6 @@
 <div class="relative" x-data="{ notificationOpen: false, hasNotifications: true }">
     <button @click="notificationOpen = !notificationOpen" :disabled="!hasNotifications"
-        class="relative flex items-center justify-center bg-gray-700 rounded text-whire w-9 h-9 hover:bg-gray-600 focus:outline-none disabled:opacity-50">
+        class="relative flex items-center justify-center text-white bg-gray-700 rounded w-9 h-9 hover:bg-gray-600 focus:outline-none disabled:opacity-50">
         <i class="fas fa-bell"></i>
 
         <!-- Punto rojo si hay notificaciones -->
