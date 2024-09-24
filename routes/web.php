@@ -2,9 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'home')->name('home');
-
-Route::view('/{slug}', 'default')->name('default');
 
 Route::prefix('admin')->group(function () {
 
@@ -18,3 +15,12 @@ Route::prefix('admin')->group(function () {
 
     require __DIR__ . '/auth.php';
 });
+
+
+Route::view('/', 'home')
+    ->middleware(['auth'])
+    ->name('home');
+
+Route::view('/{slug}', 'default')
+    ->middleware(['auth'])
+    ->name('default');
