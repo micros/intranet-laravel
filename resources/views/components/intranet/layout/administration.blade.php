@@ -1,6 +1,6 @@
 <div class="relative" x-data="{ adminOpen: false }">
     <button @click="adminOpen = !adminOpen"
-        class="flex items-center px-3 py-3 text-white bg-gray-700 hover:bg-gray-600 focus:outline-none">
+        class="flex items-center justify-center bg-gray-700 rounded text-whire w-9 h-9 hover:bg-gray-600 focus:outline-none">
         <i class="fas fa-cogs"></i>
     </button>
     <div x-show="adminOpen" @click.away="adminOpen = false"
