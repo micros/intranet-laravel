@@ -4,7 +4,7 @@
         <i class="fas fa-cogs"></i>
     </button>
     <div x-show="adminOpen" @click.away="adminOpen = false"
-        class="absolute left-0 z-50 w-48 mt-2 bg-white rounded shadow-lg" x-transition.origin.top.right>
+        class="absolute left-0 z-50 w-48 mt-2 bg-white rounded shadow-lg" x-transition.origin.top.right x-cloak>
         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Gestión de Usuarios</a>
         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Configuraciones</a>
         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Reportes</a>
