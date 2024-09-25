@@ -1,6 +1,6 @@
 <div
-    class="flex flex-col items-start justify-between p-3 text-white bg-gray-800 md:flex-row md:items-center md:flex-none">
-    <div class="flex items-center mt-3 space-x-3 md:mr-8 md:mt-0">
+    class="flex flex-col items-start justify-between p-3 text-white bg-slate-700 md:flex-row md:items-center md:flex-none">
+    <div class="flex items-center mt-3 space-x-1 md:mr-8 md:mt-0">
         <x-intranet.layout.toggle-menu />
         <x-intranet.layout.administration />
         <x-intranet.layout.profile />
