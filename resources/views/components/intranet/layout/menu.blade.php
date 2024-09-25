@@ -1,7 +1,7 @@
 <!-- Navegación lateral -->
 <nav x-show="isMenuOpen"
     class="inset-0 z-40 flex flex-col justify-between text-white bg-gray-700 md:relative md:w-64 md:h-auto"
-    x-transition.opacity.duration.150ms>
+    -translate-x-full>
     <!-- Nombre de la aplicación -->
     <h1 class="px-4 py-2 text-xl font-semibold text-orange-300">{{ config('app.name', 'Intranet Micrositios') }}</h1>
 
