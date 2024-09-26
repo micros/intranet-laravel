@@ -5,7 +5,7 @@
 
     <!-- Botón de búsqueda -->
     <button
-        class="absolute flex items-center justify-center transform -translate-y-1/2 bg-gray-600 rounded-full right-2 top-1/2 hover:bg-gray-500 focus:outline-none w-9 h-9">
+        class="absolute flex items-center justify-center transform -translate-y-1/2 rounded-full bg-slate-700 right-2 top-1/2 text-slate-300 hover:bg-slate-500 focus:outline-none w-9 h-9">
         <i class="text-white fas fa-search"></i>
     </button>
 </div>

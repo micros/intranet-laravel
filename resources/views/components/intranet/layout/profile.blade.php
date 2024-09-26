@@ -1,7 +1,7 @@
 <div class="relative" x-data="{ profileOpen: false }">
     <button @click="profileOpen = !profileOpen"
         class="flex items-center justify-center rounded-full text-slate-300 w-9 h-9 hover:bg-slate-500 focus:outline-none">
-        <i class="fas fa-user"></i>
+        <i class="fa-regular fa-user"></i>
     </button>
     <div x-show="profileOpen" @click.away="profileOpen = false"
         class="absolute left-0 z-50 w-48 mt-2 bg-white rounded shadow-lg" x-transition.origin.top.right x-cloak>
