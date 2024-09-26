@@ -25,7 +25,7 @@
         Juan Pérez
     </x-slot>
     <x-slot:date>
-        22 de Septiembre de 2024
+        01/22/2024
     </x-slot>
     <x-slot:sidebar>
         <ul>

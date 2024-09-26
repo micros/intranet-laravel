@@ -1,0 +1,1 @@
+<span>Autor: {{ $author }}</span>
