@@ -5,6 +5,10 @@
         <x-intranet.layout.administration />
         <x-intranet.layout.profile />
         <x-intranet.layout.notification />
+        <div class="flex justify-center py-4 pl-14 md:hidden">
+            <livewire:intranet.logout-button message="" />
+        </div>
+
     </div>
 
     <!-- Buscador -->

@@ -14,7 +14,7 @@
     </ul>
 
     <!-- Contenedor para el botón de logout centrado -->
-    <div class="flex justify-center py-4">
-        <livewire:intranet.logout-button />
+    <div class="justify-center hidden py-4 md:flex">
+        <livewire:intranet.logout-button message="Cerrar Sesión" />
     </div>
 </nav>

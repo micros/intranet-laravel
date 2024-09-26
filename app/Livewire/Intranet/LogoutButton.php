@@ -8,6 +8,7 @@ use Livewire\Component;
 
 class LogoutButton extends Component
 {
+    public $message;
     public function logout()
     {
         // Llama al action Logout
