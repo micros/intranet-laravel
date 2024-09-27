@@ -20,7 +20,7 @@
             <x-intranet.items.subtitle :$subtitle class="mb-4 text-2xl" />
 
             <!-- Imagen -->
-            <x-intranet.items.image w="450" h="300" alt="Texto alternativo de la imagen" class="w-full md:w-3/4" />
+            <x-intranet.items.image w="600" h="400" alt="Texto alternativo de la imagen" class="w-full md:w-3/4" />
 
             <!-- Resumen -->
             <x-intranet.items.summary :$summary class="mt-8 mb-6 text-lg" />
