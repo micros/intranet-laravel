@@ -7,10 +7,10 @@
         {{ config('app.name', 'Intranet Micrositios') }}</h1>
 
     <ul class="mb-auto">
-        <li><a href="/" class="block px-4 py-2 md:pl-8 hover:bg-blue-600">Inicio</a></li>
-        <li><a href="/AboutUs" class="block px-4 py-2 md:pl-8 hover:bg-blue-600">Acerca de</a></li>
-        <li><a href="/Services" class="block px-4 py-2 md:pl-8 hover:bg-blue-600">Servicios</a></li>
-        <li><a href="/Contact" class="block px-4 py-2 md:pl-8 hover:bg-blue-600">Contacto</a></li>
+        <x-intranet.items.menu-item name='Inicio' url='/' />
+        <x-intranet.items.menu-item name='Acerca de' url='/AboutUs' />
+        <x-intranet.items.menu-item name='Servicios' url='/Services' />
+        <x-intranet.items.menu-item name='Contacto' url='/Contact' />
     </ul>
 
     <!-- Contenedor para el botón de logout centrado -->
