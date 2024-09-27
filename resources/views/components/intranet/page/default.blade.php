@@ -19,15 +19,18 @@
             <!-- Subtítulo -->
             <x-intranet.items.subtitle :$subtitle class="mb-4 text-2xl" />
 
+            <!-- Imagen -->
+            <x-intranet.items.image w="450" h="300" alt="Texto alternativo de la imagen" class="w-full md:w-3/4" />
+
             <!-- Resumen -->
-            <x-intranet.items.summary :$summary class="mb-6 text-lg" />
+            <x-intranet.items.summary :$summary class="mt-8 mb-6 text-lg" />
 
             <!-- Descripción -->
             <x-intranet.items.description :$description />
             <!-- Información del autor y fecha de creación -->
             <div class="flex flex-col justify-between pt-4 text-sm text-gray-500 border-t border-gray-300 md:flex-row">
                 <x-intranet.items.date :$date class="text-sm" />
-                <x-intranet.items.author :$author />
+                <x-intranet.items.author :$author class="text-sm" />
             </div>
             <x-intranet.items.children class="mt-8 md:ml-2" />
         </div>

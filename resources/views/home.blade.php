@@ -120,13 +120,13 @@
                 <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
                     <!-- Fotos simuladas (usando imágenes de servicios gratuitos) -->
                     <div class="overflow-hidden bg-white rounded-lg shadow">
-                        <img src="https://via.placeholder.com/400x300?text=Foto+1" alt="Última Foto 1">
+                        <x-intranet.items.image w="450" h="350" alt="Texto alternativo de la imagen" class="w-full" />
                     </div>
                     <div class="overflow-hidden bg-white rounded-lg shadow">
-                        <img src="https://via.placeholder.com/400x300?text=Foto+2" alt="Última Foto 2">
+                        <x-intranet.items.image w="450" h="350" alt="Texto alternativo de la imagen" class="w-full" />
                     </div>
                     <div class="overflow-hidden bg-white rounded-lg shadow">
-                        <img src="https://via.placeholder.com/400x300?text=Foto+3" alt="Última Foto 3">
+                        <x-intranet.items.image w="450" h="350" alt="Texto alternativo de la imagen" class="w-full" />
                     </div>
                 </div>
             </section>

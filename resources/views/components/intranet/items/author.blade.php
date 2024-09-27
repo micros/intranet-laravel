@@ -1,1 +1,1 @@
-<span>Autor: {{ $author }}</span>
+<span {{ $attributes->merge(['class' => 'text-gray-700']) }}>Autor: {{ $author }}</span>
