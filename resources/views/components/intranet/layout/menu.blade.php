@@ -7,7 +7,7 @@
         {{ config('app.name', 'Intranet Micrositios') }}</h1>
 
     <ul class="mb-auto">
-        <x-intranet.items.menu-item name='Inicio' url='/' />
+        <x-intranet.items.menu-item name='Dashboard' url='/' />
         <x-intranet.items.menu-item name='Acerca de' url='/AboutUs' />
         <x-intranet.items.menu-item name='Servicios' url='/Services' />
         <x-intranet.items.menu-item name='Contacto' url='/Contact' />
