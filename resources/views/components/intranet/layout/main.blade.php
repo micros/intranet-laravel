@@ -10,9 +10,7 @@
             {{ $content }}
             <!-- Barra lateral de destacados -->
             @if (isset($sidebar) && !$sidebar->isEmpty())
-                <x-intranet.layout.sidebar>
-                    {{ $sidebar }}
-                </x-intranet.layout.sidebar>
+                {{ $sidebar }}
             @endif
         </div>
     </main>

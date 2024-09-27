@@ -1,13 +1,9 @@
-<x-intranet.layout.main>
-    {{-- Layout necesita name --}}
-    <x-slot:name>
-        {{ $name }}
-    </x-slot>
+<x-intranet.layout.main :$name>
     {{-- Main necesita sidebar --}}
-    @if (isset($sidebar) && !$sidebar->isEmpty())
+    @if (isset($destacados) && count($destacados))
         <x-slot:sidebar>
-            {{ $sidebar }}
-        </x-slot>
+            <x-intranet.layout.sidebar :$destacados />
+        </x-slot:sidebar>
     @endif
     {{-- Main necesita content --}}
     <x-slot:content>
@@ -19,6 +15,14 @@
             <!-- Subtítulo -->
             <x-intranet.items.subtitle :$subtitle class="mb-4 text-2xl" />
 
+            <!-- Información del autor y fecha de creación -->
+            <div>
+                <x-intranet.items.date :$date class="text-sm" />
+            </div>
+            <div class="mb-4">
+                <x-intranet.items.author :$author class="text-sm" />
+            </div>
+
             <!-- Imagen -->
             <x-intranet.items.image w="600" h="400" alt="Texto alternativo de la imagen" class="w-full md:w-3/4" />
 
@@ -27,12 +31,8 @@
 
             <!-- Descripción -->
             <x-intranet.items.description :$description />
-            <!-- Información del autor y fecha de creación -->
-            <div class="flex flex-col justify-between pt-4 text-sm text-gray-500 border-t border-gray-300 md:flex-row">
-                <x-intranet.items.date :$date class="text-sm" />
-                <x-intranet.items.author :$author class="text-sm" />
-            </div>
-            <x-intranet.items.children class="mt-8 md:ml-2" />
+            <!-- Subcategorías -->
+            <x-intranet.items.children :$children class="mt-8 md:ml-2" />
         </div>
     </x-slot>
 </x-intranet.layout.main>

@@ -1,4 +1,4 @@
-<x-intranet.page.default>
+<x-intranet.page.default :$children :$destacados>
     <x-slot:name>
         Cómo Lograr un Diseño Minimalista
     </x-slot>
@@ -27,11 +27,5 @@
     <x-slot:date>
         01/22/2024
     </x-slot>
-    <x-slot:sidebar>
-        <ul>
-            <li>Destacado 1</li>
-            <li>Destacado 2</li>
-            <li>Destacado 3</li>
-        </ul>
-    </x-slot>
+
 </x-intranet.page.default>

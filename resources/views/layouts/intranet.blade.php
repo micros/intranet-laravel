@@ -24,6 +24,7 @@
     <div class="md:flex md:flex-col md:min-h-screen">
         <!-- Header -->
         <x-intranet.layout.header />
+
         <div class="flex flex-col md:flex-row md:flex-1">
             <!-- Contenedor principal -->
             <x-intranet.layout.menu />
