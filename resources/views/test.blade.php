@@ -20,7 +20,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="relative flex flex-col min-h-screen" x-data="{ menuOpen: false }">
+<body class="relative flex flex-col min-h-screen" x-data="{ menuOpen: false }" :class="{ 'overflow-hidden': menuOpen }">
     <!-- Header -->
     <header class="flex items-center justify-between w-full p-4 text-white bg-red-500">
         <div class="flex items-center space-x-2">
@@ -41,7 +41,8 @@
     <div class="relative flex flex-1">
         <!-- Navegación lateral -->
         <aside :class="{ 'hidden': !menuOpen, 'block': menuOpen }"
-            class="absolute top-0 left-0 w-64 p-4 text-white bg-blue-500 lg:block lg:static lg:relative lg:z-10 lg:transform-none">
+            class="absolute top-0 left-0 w-full h-full p-4 text-white bg-blue-500 lg:block lg:w-64 lg:relative lg:z-10 lg:transform-none lg:h-auto"
+            x-cloak>
             <nav>
                 <ul class="space-y-2">
                     <li><a href="#" class="block">Dashboard</a></li>
@@ -63,7 +64,15 @@
                     <li><a href="#" class="block">Settings</a></li>
                     <li><a href="#" class="block">Profile</a></li>
                     <li><a href="#" class="block">Dashboard</a></li>
-
+                    <li><a href="#" class="block">Settings</a></li>
+                    <li><a href="#" class="block">Profile</a></li>
+                    <li><a href="#" class="block">Dashboard</a></li>
+                    <li><a href="#" class="block">Settings</a></li>
+                    <li><a href="#" class="block">Profile</a></li>
+                    <li><a href="#" class="block">Dashboard</a></li>
+                    <li><a href="#" class="block">Settings</a></li>
+                    <li><a href="#" class="block">Profile</a></li>
+                    <!-- Resto del menú -->
                 </ul>
             </nav>
         </aside>
@@ -71,7 +80,73 @@
         <!-- Contenido principal -->
         <main class="flex-1 p-6 bg-gray-100 lg:ml-0 lg:z-0">
             <h2 class="text-2xl font-bold">Contenido Principal</h2>
-            <p>Aquí va el contenido de la página.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
+            <p>Aquí va el contenido de la página que puede ocupar varias páginas.</p>
         </main>
     </div>
 
