@@ -20,12 +20,12 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="font-sans antialiased bg-gray-100" x-data="{ isMenuOpen: true, adminOpen: false, profileOpen: false }">
+<body class="font-sans antialiased bg-gray-100" x-data="{ menuOpen: false }" :class="{ 'overflow-hidden': menuOpen }">
     <div class="md:flex md:flex-col md:min-h-screen">
         <!-- Header -->
         <x-intranet.layout.header />
 
-        <div class="flex flex-col md:flex-row md:flex-1">
+        <div class="relative flex flex-col md:flex-row md:flex-1">
             <!-- Contenedor principal -->
             <x-intranet.layout.menu />
             {{ $slot }}
