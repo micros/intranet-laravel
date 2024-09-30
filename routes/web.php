@@ -27,6 +27,10 @@ Route::view('/', 'home')
     ->middleware(['auth'])
     ->name('home');
 
+Route::view('/test', 'test')
+    ->middleware(['auth'])
+    ->name('test');
+
 
 // Modificamos la ruta para inyectar $children
 Route::get('/{slug}', function () {
