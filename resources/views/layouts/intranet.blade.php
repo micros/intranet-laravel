@@ -26,9 +26,21 @@
         <x-intranet.layouts.header />
 
         <div class="relative flex flex-col md:flex-row md:flex-1">
-            <!-- Contenedor principal -->
+            <!-- Menu lateral -->
             <x-intranet.layouts.menu />
-            {{ $slot }}
+
+            <!-- Contenedor principal -->
+            <main class="flex-1">
+                <div class="h-full lg:flex">
+                    <!-- Contenido principal -->
+                    {{ $content }}
+                    <!-- Barra lateral de destacados -->
+                    @if (isset($sidebar) && !$sidebar->isEmpty())
+                        {{ $sidebar }}
+                    @endif
+                </div>
+            </main>
+
         </div>
 
         <!-- Footer -->

@@ -1,4 +1,8 @@
-<x-intranet.layouts.main :$name>
+<x-intranet-layout>
+    <x-slot:name>
+        {{ $name }}
+    </x-slot>
+
     {{-- Main necesita sidebar --}}
     @if (isset($sidebar) && !$sidebar->isEmpty())
         <x-slot:sidebar>
@@ -13,4 +17,4 @@
             {{ $content }}
         </div>
     </x-slot>
-</x-intranet.layouts.main>
+</x-intranet-layout>

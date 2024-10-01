@@ -1,4 +1,8 @@
-<x-intranet.layouts.main :$name>
+<x-intranet-layout>
+    <x-slot:name>
+        {{ $name }}
+    </x-slot>
+
     {{-- Main necesita sidebar --}}
     @if (isset($destacados) && count($destacados))
         <x-slot:sidebar>
@@ -35,4 +39,4 @@
             <x-intranet.lists.default :$children class="mt-8 md:ml-2" />
         </div>
     </x-slot>
-</x-intranet.layouts.main>
+</x-intranet-layout>
