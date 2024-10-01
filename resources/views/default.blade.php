@@ -1,4 +1,4 @@
-<x-intranet.page.default :$children :$destacados>
+<x-intranet.pages.default :$children :$destacados>
     <x-slot:name>
         Cómo Lograr un Diseño Minimalista
     </x-slot>
@@ -28,4 +28,4 @@
         01/22/2024
     </x-slot>
 
-</x-intranet.page.default>
+</x-intranet.pages.default>

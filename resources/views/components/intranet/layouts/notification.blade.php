@@ -11,10 +11,7 @@
 
     <!-- Dropdown de notificaciones centrado -->
     <div x-show="notificationOpen && hasNotifications" @click.away="notificationOpen = false"
-        class="absolute z-50 w-48 mt-2 transform -translate-x-1/2 bg-white rounded shadow-lg left-1/2"
-        x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-95"
-        x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-200"
-        x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" x-cloak>
+        class="absolute left-0 z-50 w-48 mt-2 bg-white rounded shadow-lg" x-transition.origin.top.right x-cloak>
         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Notificación 1</a>
         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Notificación 2</a>
         <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Notificación 3</a>

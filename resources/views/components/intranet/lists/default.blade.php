@@ -4,7 +4,7 @@
 
     <ul>
         @foreach ($children as $key => $item)
-            <x-intranet.items.children-item :item="$item" class="mb-6" />
+            <x-intranet.lists.default-item :item="$item" class="mb-6" />
         @endforeach
     </ul>
 </div>

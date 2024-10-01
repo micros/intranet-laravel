@@ -1,4 +1,4 @@
-<x-intranet.page.home>
+<x-intranet.pages.home>
     <x-slot:name>
         {{ __('Profile') }}
     </x-slot>
@@ -29,4 +29,4 @@
             </div>
         </div>
     </x-slot>
-</x-intranet.page.home>
+</x-intranet.pages.home>

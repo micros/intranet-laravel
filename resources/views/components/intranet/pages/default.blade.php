@@ -1,14 +1,14 @@
-<x-intranet.layout.main :$name>
+<x-intranet.layouts.main :$name>
     {{-- Main necesita sidebar --}}
     @if (isset($destacados) && count($destacados))
         <x-slot:sidebar>
-            <x-intranet.layout.sidebar :$destacados />
+            <x-intranet.layouts.sidebar :$destacados />
         </x-slot:sidebar>
     @endif
     {{-- Main necesita content --}}
     <x-slot:content>
         <div class="h-full p-6 font-sans text-gray-800 bg-white lg:flex-1 lg:px-14">
-            <x-intranet.layout.breadcrumbs />
+            <x-intranet.layouts.breadcrumbs />
             <!-- Título prominente -->
             <x-intranet.items.title :$name class="mb-2 text-4xl" />
 
@@ -32,7 +32,7 @@
             <!-- Descripción -->
             <x-intranet.items.description :$description />
             <!-- Subcategorías -->
-            <x-intranet.items.children :$children class="mt-8 md:ml-2" />
+            <x-intranet.lists.default :$children class="mt-8 md:ml-2" />
         </div>
     </x-slot>
-</x-intranet.layout.main>
+</x-intranet.layouts.main>

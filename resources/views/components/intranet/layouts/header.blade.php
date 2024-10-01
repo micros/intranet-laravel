@@ -1,12 +1,12 @@
 <div
     class="flex flex-col items-start justify-between p-3 text-white bg-slate-700 md:flex-row md:items-center md:flex-none">
     <div class="flex items-center mt-0 space-x-1 md:mr-8">
-        <x-intranet.layout.toggle-menu />
-        <x-intranet.layout.profile />
-        <x-intranet.layout.notification />
-        <x-intranet.layout.administration />
+        <x-intranet.layouts.toggle-menu />
+        <x-intranet.layouts.profile />
+        <x-intranet.layouts.notification />
+        <x-intranet.layouts.administration />
         <livewire:intranet.logout-button message="" />
-        <x-intranet.layout.searchbar />
+        <x-intranet.layouts.searchbar />
     </div>
 
     <!-- Buscador -->

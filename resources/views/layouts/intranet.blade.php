@@ -23,16 +23,16 @@
 <body class="font-sans antialiased bg-gray-100" x-data="{ menuOpen: false }" :class="{ 'overflow-hidden': menuOpen }">
     <div class="md:flex md:flex-col md:min-h-screen">
         <!-- Header -->
-        <x-intranet.layout.header />
+        <x-intranet.layouts.header />
 
         <div class="relative flex flex-col md:flex-row md:flex-1">
             <!-- Contenedor principal -->
-            <x-intranet.layout.menu />
+            <x-intranet.layouts.menu />
             {{ $slot }}
         </div>
 
         <!-- Footer -->
-        <x-intranet.layout.footer />
+        <x-intranet.layouts.footer />
 
     </div>
     @livewireScripts
